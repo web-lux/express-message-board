@@ -6,6 +6,23 @@
 	</head>
 
 	<body>
-		<h1>Hello World</h1>
+		<h1>Message Board</h1>
+		<hr />
+		<%# if messages array is not empty... %>
+		<% if (messages.length > 0) { %>	
+		<ul>
+			<%# create an li for each message in the array displaying its properties %>
+			<% messages.forEach(message => { %>
+			<li>
+				<h2><%= message.user %></h2>
+				<span><%= message.added %></span>
+				<p><%= message.text %></p>
+			</li>
+			<hr>
+			<% }) %>
+		</ul>
+		<% } else { %>
+		<p>No messages posted to board</p>
+		<% } %>
 	</body>
 </html>
