@@ -1,0 +1,19 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Message Board</title>
+	</head>
+
+	<body>
+		<h1>Add a new message</h1>
+		<hr />
+        <form action="/new" method="post">
+            <label for="user">Username</label>
+            <input type="text" name="user" id="user" required />
+            <label for="text">Message</label>
+            <input type="text" name="text" id="text" required />
+            <button type="submit">Submit</button>
+        </form>
+	</body>
+</html>
