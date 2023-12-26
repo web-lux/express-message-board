@@ -6,14 +6,17 @@
 	</head>
 
 	<body>
-		<h1>Add a new message</h1>
-		<hr />
-        <form action="/new" method="post">
-            <label for="user">Username</label>
-            <input type="text" name="user" id="user" required />
-            <label for="text">Message</label>
-            <input type="text" name="text" id="text" required />
-            <button type="submit">Submit</button>
-        </form>
+		<%- include('./partials/nav.ejs') %>
+		<main>
+			<h1>Add a new message</h1>
+			<hr />
+					<form action="/new" method="post">
+						<label for="user">Username</label>
+						<input type="text" name="user" id="user" required />
+						<label for="text">Message</label>
+						<input type="text" name="text" id="text" required />
+						<button type="submit">Submit</button>
+					</form>
+		</main>
 	</body>
 </html>
